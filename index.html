@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    
+</head>
+
+<body>
+    <nav>
+        <a href="" class="nav-logo">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#challenges">Challenges</a>
+            <a href="#future-plans">Future Plans</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="page-indicators">
+        <div class="page-dot active" data-section="home"></div>
+        <div class="page-dot" data-section="about"></div>
+        <div class="page-dot" data-section="skills"></div>
+        <div class="page-dot" data-section="education"></div>
+        <div class="page-dot" data-section="projects"></div>
+        <div class="page-dot" data-section="challenges"></div>
+        <div class="page-dot" data-section="future-plans"></div>
+        <div class="page-dot" data-section="resume"></div>
+        <div class="page-dot" data-section="contact"></div>
+    </div>
+
+    <div class="horizontal-container">
+        <section id="home">
+            <div class="content-container">
+                <div class="header-content">
+                    <h4 class="sub-headers">HELLO, WORLD</h4>
+                    <h2 class="main-header">I'm Russel Jae Dahonog</h2>
+                    <p class="sub-header"> | Computer Science Student | </p>
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://facebook.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="content-container">
+                <h1>ABOUT <br> <span> Let me introduce myself!</span> </h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm Russel Jae Dahonog, a passionate Computer Science student with a keen interest in
+                            web development and software engineering. I enjoy creating elegant solutions to complex
+                            problems and am constantly learning new technologies to expand my skill set.</p>
+                        <br>
+                        <p>Currently I'm 20 years old, Single. In my free time, I love to play video games, watch animes, and I workout atleast 4x a week. I also love studying and bread. </p>
+                        <br>
+                        <p>About my family, I have loving mother, cool older brothers, and annoying younger sisters.</p>
+                    </div>
+                    <img src="images/img3.jpeg" alt="Profile Picture" class="profile-image">
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="content-container">
+                <h1>SKILLS <br> <span> What I can do</span> </h1>
+                <div class="skills-container">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="tech">Technical Skills</button>
+                        <button class="tab-btn" data-tab="soft">Soft Skills</button>
+                    </div>
+
+                    <div class="tab-content active" id="tech">
+                        <div class="skills-list">
+                            <div class="skill-item">HTML/CSS</div>
+                            <div class="skill-item">JavaScript</div>
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">Django</div>
+                            <div class="skill-item">Git</div>
+                            <div class="skill-item">MySQL</div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="soft">
+                        <div class="skills-list">
+                            <div class="skill-item">Problem Solving</div>
+                            <div class="skill-item">Communication</div>
+                            <div class="skill-item">Teamwork</div>
+                            <div class="skill-item">Time Management</div>
+                            <div class="skill-item">Leadership</div>
+                            <div class="skill-item">Adaptability</div>  
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <a href="path/to/your-cv.pdf" class="cv-btn" target="_blank">View CV</a>
+                        <a href="#contact" class="hire-btn">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education">
+            <div class="content-container">
+                <h1>EDUCATION <br> <span> My academic journey </span> </h1>
+                <div class="education-container">
+                    <div class="timeline-wrap">
+                        <!-- Academic Background -->
+                        <h2 class="section-title">Academic Background</h2>
+                        <div class="timeline-block">
+                            <div class="timeline-ico">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-header">
+                                <h3>Bachelor of Science in Computer Science</h3>
+                                <p>2022 - Present</p>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Cavite State University</h4>
+                                <p>Understands the concepts of programming, data structures, algorithms, and software development.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-block">
+                            <div class="timeline-ico">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-header">
+                                <h3>Senior High School - STEM</h3>
+                                <p>2020 - 2022</p>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>SEAITT - Las Pinas Branch</h4>
+                                <p>Improved the problem-solving skills and critical thinking.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-block">
+                            <div class="timeline-ico">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-header">
+                                <h3>Junior High School</h3>
+                                <p>2016 - 2020</p>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>BNHS - Gawaran Annex</h4>
+                                <p>Learned common knowledge such as basic math, sciences, etc.</p>
+                            </div>
+                        </div>
+
+                        <!-- Certifications -->
+                        <h2 class="section-title" style="margin-top: 40px;">Certifications</h2>
+                        <div class="timeline-block certification">
+                            <div class="timeline-ico">
+                                <i class="fa fa-certificate"></i>
+                            </div>
+                            <div class="timeline-header">
+                                <h3>Structured Query Language</h3>
+                                <p>Issued Dec 2023</p>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>DataCamp</h4>
+                                <p>SQL concepts including the joining data, creating data, reading data, updating data, and deleting data.</p>
+                                <div class="badge-container">
+                                    <span class="badge">SQL</span>
+                                    <span class="badge">Database</span>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1oAitu65rkiG42ogj8lU4zY9e3Aay8ZxW/view?usp=sharing" class="verify-link" style="display: inline-block; margin-top: 10px;">
+                                    <i class="fas fa-external-link-alt"></i> Verify Certificate
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="timeline-block certification">
+                            <div class="timeline-ico">
+                                <i class="fa fa-certificate"></i>
+                            </div>
+                            <div class="timeline-header">
+                                <h3>Python Programming</h3>
+                                <p>Issued Oct 2023</p>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>DataCamp</h4>
+                                <p>Advanced Python programming concepts including data structures, algorithms, and
+                                    object-oriented programming.</p>
+                                <div class="badge-container">
+                                    <span class="badge">Python</span>
+                                    <span class="badge">Programming</span>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1ckidI62sWtSB2s6GzVMH_XSR2iTqjv0y/view?usp=sharing" class="verify-link" style="display: inline-block; margin-top: 10px;">
+                                    <i class="fas fa-external-link-alt"></i> Verify Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="content-container">
+                <h1>PROJECTS <br> <span> Check out some of my works</span></h1>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <img src="images/project4.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <h3 class="project-title">Enrollment System</h3>
+                            <p class="project-description">An group project for enrollment system for CvSU Bacoor with Django as framework and MySQL as database</p>
+                            <a href="https://github.com/RusselJae/EnrollmentSystem" class="project-link" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/project2.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <h3 class="project-title">Auto Spa</h3>
+                            <p class="project-description">This is a group/collab project where we use Java as our programming language and SQLiteStudio for our database.</p>
+                            <a href="https://drive.google.com/file/d/19dZ2IlycOIKk1s2UiyoGlFBs9FxuXUIz/view?usp=sharing" class="project-link" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/project3.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <h3 class="project-title">ConveEasePOS</h3>
+                            <p class="project-description">We made a pos system for our client's convenience store by using Python and MySQL.
+                            </p>
+                            <a href="https://drive.google.com/file/d/1UMLKqFwT4W7jtuPkOP0GL-9yKtshX5JF/view?usp=sharing" class="project-link" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/project1.png" alt="Project 4">
+                        <div class="project-overlay">
+                            <h3 class="project-title">Gym Membership System</h3>
+                            <p class="project-description">A group project system made for gym membership for Jesie Gym using Python and MySQL.</p>
+                            <a href="https://drive.google.com/file/d/16VxB0yT7iFOIEEtgpekJd_0sJ_1ZoMr8/view?usp=sharing" class="project-link" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="challenges">
+            <div class="content-container">
+                <h1>CHALLENGES <br> <span> Overcoming Obstacles </span> </h1>
+                <div class="future-plans-container">
+                    <div class="plans-grid-wrapper">
+                        <div class="plans-grid-background"></div>
+                        <div class="plans-grid">
+                            <div class="plan-item">
+                                <i class="fa-solid fa-mountain"></i>
+                                <h3>Programming Languages</h3>
+                                <p>Complex programming problems and technical obstacles has been the biggest challenge I've experience and I overcame it through building projects and continuous learning.</p>
+                            </div>
+                            <div class="plan-item">
+                                <i class="fa-solid fa-puzzle-piece"></i>
+                                <h3>Technical Issues</h3>
+                                <p>Dealing with bugs, glitches, or on rare cases the hardware malfunctions are also the challenges that I always experience. I always make sure to understand what I working on so that I know how to fix it.</p>
+                            </div>
+                            <div class="plan-item">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <h3>Motivation</h3>
+                                <p>I always struggled to stay motivated when it comes to making projects. I realized that I don't need to rely to motivation, what I really need is focus and concentration ever since then I got to able finish projects on time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="future-plans">
+            <div class="content-container">
+                <h1>FUTURE PLANS <br> <span>Where I'm heading</span></h1>
+                <div class="future-plans-container">
+                    <div class="plans-grid-wrapper">
+                        <div class="plans-grid-background"></div>
+                        <div class="plans-grid">
+                            <div class="plan-items">
+                                <i class="fas fa-laptop-code"></i>
+                                <h3>Career Goals</h3>
+                                <p>Aspiring to become a web developer/data analyst.</p>
+                            </div>
+                            <div class="plan-items">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h3>Upskilling</h3>
+                                <p>Plan to continue to study and learn more about the current trends and technologies.</p>
+                            </div>
+                            <div class="plan-items">
+                                <i class="fas fa-rocket"></i>
+                                <h3>Personal Projects</h3>
+                                <p>Developing innovative applications that solve real-world problems and contribute to
+                                    open-source communities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <div class="content-container">
+                <h1>RESUME <br> <span>My Professional Summary</span></h1>
+                <div class="resume-container">
+                    <div class="resume-content">
+                        <div class="resume-section">
+                            <h2>Professional Summary</h2>
+                            <p>Dedicated Computer Science student with a passion for creating innovative solutions through code. 
+                               Equipped with strong problem-solving abilities and a continuous learning mindset.</p>
+                        </div>
+                        <div class="resume-section">
+                            <h2>Technical Skills</h2>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">Git</span>
+                            </div>
+                        </div>
+                        <div class="resume-download">
+                            <a href="images/resume.png" download>
+                                <i class="fas fa-download"></i>
+                                Download Full Resume
+                            </a>
+                        </div>
+                    </div>
+                    <div class="resume-image">
+                        <img src="images/resume.png" alt="Resume Preview">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="content-container">
+                <h1>CONTACT <br> <span>Get in touch with me</span></h1>
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <input type="text" name="Subject" placeholder="Subject" required>
+                            <textarea name="Message" placeholder="Your Message" required></textarea>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="info-text">
+                                <h4>Location</h4>
+                                <p>Molino VII, Bacoor City, Cavite</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="info-text">
+                                <h4>Email</h4>
+                                <p>neroooo27@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="info-text">
+                                <h4>Phone</h4>
+                                <p>+63 969 235 3537</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div class="info-text">
+                                <h4>Working Hours</h4>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> <!-- Close horizontal-container -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>© 2024 Russel Jae Dahonog. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://facebook.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:neroooo27@gmail.com"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
