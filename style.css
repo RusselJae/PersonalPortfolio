@@ -527,6 +527,18 @@ nav a.active {
     margin-bottom: 15px;
 }
 
+.project-titles {
+    color: #f5ffb6;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.project-descriptions {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
 .project-link {
     color: #f5ffb6;
     text-decoration: none;
