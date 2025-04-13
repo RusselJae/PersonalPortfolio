@@ -1,4 +1,4 @@
- // Update scroll event listener for horizontal scrolling
+// Update scroll event listener for horizontal scrolling
  window.addEventListener('scroll', () => {
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('nav a');
@@ -60,3 +60,29 @@ document.querySelectorAll('.tab-btn').forEach(button => {
         document.getElementById(button.dataset.tab).classList.add('active');
     });
 });
+
+// Contact Form Handler
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzWPW5Z_e79vSAvxyFWRiPCctrtktvZ0Ill7y35r6rezMwAqN9y8zEVY4PJ0hnqWr_UJQ/exec' // Replace with your actual web app URL
+const form = document.forms['submit-to-google-sheet']
+const msg = document.createElement('div')
+msg.className = 'form-message'
+form.after(msg)
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    msg.textContent = 'Sending...'
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.textContent = 'Message sent successfully!'
+            msg.style.color = '#2ecc71'
+            form.reset()
+            setTimeout(() => {
+                msg.textContent = ''
+            }, 5000)
+        })
+        .catch(error => {
+            msg.textContent = 'Error sending message!'
+            msg.style.color = '#e74c3c'
+            console.error('Error!', error.message)
+        })
+})
