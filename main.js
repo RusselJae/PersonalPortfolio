@@ -24,12 +24,11 @@
         }
     });
 
-    // Add background line animation
     const lines = document.querySelectorAll('.line');
     const scrollX = window.scrollX;
 
     lines.forEach((line, index) => {
-        const speed = (index + 1) * 0.3; // Increased movement speed
+        const speed = (index + 1) * 0.3; 
         const rotation = 15 + (index * 10);
         line.style.transform = `rotate(${rotation}deg) translateX(${-scrollX * speed}px)`;
     });
@@ -51,11 +50,9 @@ document.querySelectorAll('.page-dot, nav a').forEach(element => {
 // Add tab functionality
 document.querySelectorAll('.tab-btn').forEach(button => {
     button.addEventListener('click', () => {
-        // Remove active class from all buttons and contents
         document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
         document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
 
-        // Add active class to clicked button and corresponding content
         button.classList.add('active');
         document.getElementById(button.dataset.tab).classList.add('active');
     });
