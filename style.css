@@ -9,7 +9,6 @@
 body {
     background: #f5f5f5;
     overflow-y: hidden;
-    /* Prevent vertical scroll */
     position: relative;
 }
 
@@ -18,7 +17,6 @@ body {
     top: 0;
     left: 0;
     width: 200vw;
-    /* Make wider than viewport */
     height: 100vh;
     z-index: 0;
     pointer-events: none;
@@ -28,11 +26,8 @@ body {
 .line {
     position: absolute;
     width: 200vw;
-    /* Make wider than viewport */
     height: 3px;
-    /* Make lines thicker */
     background: rgba(245, 255, 182, 0.5);
-    /* Make more visible */
     transform-origin: 0 0;
     color: rgba(245, 255, 182, 0.5);
 }
@@ -85,19 +80,14 @@ section {
     padding: 60px;
     border-radius: 20px;
     margin-left: 160px;
-    /* Increased space for navbar */
     margin-right: 20px;
-    /* Space for page indicators */
     width: 90%;
     max-width: 1200px;
     min-height: 80vh;
-    /* Added minimum height */
     display: flex;
-    /* Added to center content vertically */
     flex-direction: column;
     justify-content: center;
     position: relative;
-    /* Added for absolute positioning of h1 */
 }
 
 
@@ -309,7 +299,6 @@ nav {
 }
 
 .nav-logo {
-    /* padding: 20px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -910,13 +899,13 @@ nav a.active {
     position: absolute;
     top: 50%;
     left: -28%;
-    width: 143%;  /* Changed from 200% to 100% */
+    width: 143%; 
     height: 350px !important;
     background: #544848;
     transform: translateY(-50%);
     border-radius: 10px;
     z-index: 1;
-    overflow: hidden;  /* Added to prevent overflow */
+    overflow: hidden;
 }
 
 .plans-grid {
